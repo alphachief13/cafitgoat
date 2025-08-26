@@ -12,6 +12,8 @@ import {
 } from "@/components/ui/accordion";
 import { accordionContentData } from "@/data/main-content";
 import BlurText from "@/components/BlurText";
+import VideosSection from "@/components/VideoSection";
+
 
 function IntroSection() {
   return (
@@ -27,13 +29,15 @@ function IntroSection() {
       </div>
 
       <div className="w-full h-full flex items-center justify-center flex-col gap-10">
+
         <BlurText
           text="João Lucas da Rosa, editor"
           delay={250}
           animateBy="words"
           direction="top"
-          className="font-bold text-5xl text-white text-centerF"
+          className="font-bold text-3xl lg:text-5xl text-white text-center"
         />
+
         <TiltedCard
           imageSrc="pfp-1.jpg"
           altText=""
@@ -50,13 +54,6 @@ function IntroSection() {
           overlayContent={<></>}
         />
       </div>
-
-      {/* <CircularText
-        text="*CAFITGOAT*CAFITGOAT"
-        onHover="speedUp"
-        spinDuration={20}
-        className="custom-class"
-      /> */}
     </div>
   );
 }
@@ -105,15 +102,15 @@ export default function Home() {
 
       <div className="bg-[#162325] py-10 flex flex-col justify-center items-center">
         <BlurText
-          text="Commentary Videos"
+          text="This is my job:"
           delay={400}
           animateBy="words"
           direction="top"
           onAnimationComplete={handleAnimationComplete}
-          className="text-5xl font-bold text-white"
+          className="my-5 text-5xl font-bold text-white"
         />
 
-        
+        <VideosSection />
       </div>
 
       <AboutMeAccordion />
