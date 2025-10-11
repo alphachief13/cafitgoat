@@ -31,7 +31,7 @@ function IntroSection() {
       <div className="w-full h-full flex items-center justify-center flex-col gap-10">
 
         <BlurText
-          text="João Lucas da Rosa, editor"
+          text="Cafitgoat, Video Editor"
           delay={250}
           animateBy="words"
           direction="top"
@@ -102,7 +102,7 @@ export default function Home() {
 
       <div className="bg-[#162325] py-10 flex flex-col justify-center items-center">
         <BlurText
-          text="This is my job:"
+          text="What I've worked on:"
           delay={400}
           animateBy="words"
           direction="top"

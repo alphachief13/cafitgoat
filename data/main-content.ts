@@ -39,7 +39,7 @@ export const accordionContentData: AccordionData[] = [
       <strong>Discord:</strong> cafitgoat<br />
       <a href="https://www.reddit.com/user/MeiaaDoiss/" target="_blank"><strong>Reddit:</strong> u/MeiaaDoiss</a> <br />
       <a href="https://x.com/cafitgoat" target="_blank"><strong>Twitter (X):</strong> @cafitgoat</a> <br />
-      <a href="https://www.youtube.com/@notifgoat" target="_blank"><strong>Youtube:</strong> @notifgoat</a> <br />
+      
     `,
   },
 ];
@@ -52,6 +52,7 @@ type Video = {
 };
 
 type VideosData = {
+  commentary: Video[];
   gameplayWithCommentary: Video[];
   gameplayWithoutCommentary: Video[];
   memes: Video[];
@@ -61,7 +62,7 @@ type VideosData = {
 };
 
 export const videosData: VideosData = {
-  gameplayWithCommentary: [
+  commentary: [
     {
       videoThumb: "https://i.imgur.com/I6Pu2YB.png",
       videoLink: "https://www.youtube.com/watch?v=WnTL0_Rh5hw",
@@ -73,25 +74,27 @@ export const videosData: VideosData = {
       videoName: "Grounded 2 is AMAZINGLY GOOD",
     },
     {
-      videoThumb: "https://i.imgur.com/VeYw3FU.jpeg",
-      videoLink: "https://www.youtube.com/watch?v=qJSrt21vDhU",
-      videoName: "TERMITES NEED AN UPDATE (and here's why)",
+      videoThumb: "https://img.youtube.com/vi/x--yDYB66NY/maxresdefault.jpg",
+      videoLink: "https://www.youtube.com/watch?v=x--yDYB66NY",
+      videoName: "quit aura farming",
     },
-    // {
-    //   videoThumb: "https://img.youtube.com/vi/Q5cUdiQ282k/maxresdefault.jpg",
-    //   videoLink: "https://www.youtube.com/watch?v=Q5cUdiQ282k",
-    //   videoName: "Just a Lime (ROBLOX)",
-    // },
-    // {
-    //   videoThumb: "https://img.youtube.com/vi/ZAsmNmS8X10/maxresdefault.jpg",
-    //   videoLink: "https://www.youtube.com/watch?v=ZAsmNmS8X10",
-    //   videoName: "level 13 be like - Apeirophobia (Roblox)",
-    // },
-    // {
-    //   videoThumb: "https://img.youtube.com/vi/At-pAmlVaGs/maxresdefault.jpg",
-    //   videoLink: "https://www.youtube.com/watch?v=At-pAmlVaGs",
-    //   videoName: "Can I make the Prince Buni's pole / essence good? (no)",
-    // },
+  ],
+    gameplayWithCommentary: [
+    {
+      videoThumb: "https://img.youtube.com/vi/Q5cUdiQ282k/maxresdefault.jpg",
+      videoLink: "https://www.youtube.com/watch?v=Q5cUdiQ282k",
+      videoName: "Just a Lime (ROBLOX)",
+    },
+    {
+      videoThumb: "https://img.youtube.com/vi/Biq1y-pRtHM/maxresdefault.jpg",
+      videoLink: "https://www.youtube.com/watch?v=Biq1y-pRtHM",
+      videoName: "ROBLOX - 99 Days in the Forest (Ft. citizen0618) (REALLY old version)",
+    },
+    {
+      videoThumb: "https://img.youtube.com/vi/At-pAmlVaGs/maxresdefault.jpg",
+      videoLink: "https://youtu.be/At-pAmlVaGs?si=2hTeMmH6uT2sEbeF",
+      videoName: "Can I make the Prince Buni's pole / essence good? (no)",
+    },
   ],
   gameplayWithoutCommentary: [
     {
@@ -156,9 +159,9 @@ export const videosData: VideosData = {
       videoName: "What is the difference between Frontend and Backend?",
     },
     {
-      videoThumb: "https://i.imgur.com/h4Q3UqH.jpeg",
-      videoLink: "https://www.youtube.com/shorts/618hwQbBaRQ",
-      videoName: "A quick way to transform FIGMA designs into HTML?",
+      videoThumb: "https://img.youtube.com/vi/_LxCblIkt1U/maxresdefault.jpg",
+      videoLink: "https://www.youtube.com/shorts/_LxCblIkt1U",
+      videoName: "Is THIS a BUG!?",
     },
     {
       videoThumb: "https://i.imgur.com/tnRhik1.jpeg",

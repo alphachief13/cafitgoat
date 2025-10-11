@@ -17,6 +17,10 @@ export default function VideosSection() {
 
   const categories: { title: string; data: Video[] }[] = [
     {
+      title: "Commentary",
+      data: videosData.commentary,
+    },
+    {
       title: "Gameplay with commentary",
       data: videosData.gameplayWithCommentary,
     },
@@ -101,7 +105,7 @@ export default function VideosSection() {
               transition={{ type: "spring", duration: 0.5 }}
             >
               <button
-                className="absolute -top-10 right-0 text-white text-3xl hover:scale-110 transition"
+                className="absolute -top-10 right-0 text-white text-3xl hover:scale-110 transition cursor-pointer"
                 onClick={() => setActiveVideo(null)}
               >
                 ✖
