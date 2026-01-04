@@ -80,11 +80,11 @@ export const videosData: VideosData = {
     },
   ],
     gameplayWithCommentary: [
-    {
-      videoThumb: "https://img.youtube.com/vi/Q5cUdiQ282k/maxresdefault.jpg",
-      videoLink: "https://www.youtube.com/watch?v=Q5cUdiQ282k",
-      videoName: "Just a Lime (ROBLOX)",
-    },
+      {
+        videoThumb: "https://i.ytimg.com/vi/y1tuaJEoJYY/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLC1joonEiH_c8s8mS6_JjAFNS9IZw",
+        videoLink: "https://www.youtube.com/watch?v=y1tuaJEoJYY",
+        videoName: "CAN I EVEN SHOW THIS ON HERE ?!?! Dispatch Walkthrough Part 2 (Ep 3 & 4)",
+      },
     {
       videoThumb: "https://img.youtube.com/vi/Biq1y-pRtHM/maxresdefault.jpg",
       videoLink: "https://www.youtube.com/watch?v=Biq1y-pRtHM",
@@ -95,6 +95,8 @@ export const videosData: VideosData = {
       videoLink: "https://youtu.be/At-pAmlVaGs?si=2hTeMmH6uT2sEbeF",
       videoName: "Can I make the Prince Buni's pole / essence good? (no)",
     },
+
+
   ],
   gameplayWithoutCommentary: [
     {
@@ -151,6 +153,12 @@ export const videosData: VideosData = {
       videoName:
         "Minecraft ARG but the protagonist is somewhat smart",
     },
+    {
+      videoThumb: "https://i.ytimg.com/vi/ys7nGxdrlqA/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAhnMYprpuhBXPGlmGSj3EnHtqPcQ",
+      videoLink: "https://www.youtube.com/watch?v=ys7nGxdrlqA",
+      videoName:
+        "Minecraft ARG but it's the wrong protagonist",
+    },
   ],
   shorts: [
     {
@@ -164,9 +172,9 @@ export const videosData: VideosData = {
       videoName: "Is THIS a BUG!?",
     },
     {
-      videoThumb: "https://i.imgur.com/tnRhik1.jpeg",
-      videoLink: "https://www.youtube.com/shorts/1ijxZkvxG9Y",
-      videoName: "i wasn't supposed to be that smart",
+      videoThumb: "https://p16-pu-sign-useast8.tiktokcdn-us.com/tos-useast8-p-0068-tx2/oYiIBKIbwMJ8kMBSAAf0iXAqBqIpmAANiZj0NC~tplv-tiktokx-360p.webp?dr=1363&refresh_token=386d328b&x-expires=1767643200&x-signature=mDqWhAPS2ouV%2BhwJHN0mMJwH52g%3D&t=bacd0480&ps=d97f9a4f&shp=d05b14bd&shcp=1d1a97fc&idc=maliva&biz_tag=tt_video&s=AWEME_DETAIL&sc=feed_cover",
+      videoLink: "https://www.tiktok.com/@jaykxle/video/7573706796687248671",
+      videoName: "Why do we work here - Part 10",
     },
     // {
     //   videoThumb: "https://i.imgur.com/uphZhUr.jpeg",

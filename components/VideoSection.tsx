@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { videosData } from "@/data/main-content";
 import BlurText from "./BlurText";
 import { Play, PlayCircle } from "lucide-react";
+import { getTikTokVideoId } from "@/utils/getTiktokVideoId";
 
 type Video = {
   videoThumb: string;
@@ -14,6 +15,7 @@ type Video = {
 
 export default function VideosSection() {
   const [activeVideo, setActiveVideo] = useState<string | null>(null);
+  const [videoLink, setVideoLink] = useState<string>("");
 
   const categories: { title: string; data: Video[] }[] = [
     {
@@ -33,6 +35,9 @@ export default function VideosSection() {
     { title: "Acting / ARG / Story", data: videosData.acting },
     { title: "Shorts", data: videosData.shorts },
   ];
+
+
+  console.log(activeVideo)
 
   return (
     <div className="space-y-16 p-6">
@@ -63,7 +68,10 @@ export default function VideosSection() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.97 }}
                   className="rounded-2xl overflow-hidden shadow-lg bg-[#1a1a1a] text-white cursor-pointer group relative"
-                  onClick={() => setActiveVideo(videoId ?? null)}
+                  onClick={() => {
+                    setActiveVideo(videoId ?? null)
+                    setVideoLink(video.videoLink)
+                  }}
                 >
                   <img
                     src={video.videoThumb}
@@ -110,13 +118,21 @@ export default function VideosSection() {
               >
                 ✖
               </button>
-              <iframe
+              {videoLink.includes("www.youtube.com") && <iframe
                 className="w-full aspect-video rounded-xl shadow-2xl"
                 src={`https://www.youtube.com/embed/${activeVideo}?autoplay=1`}
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-              ></iframe>
+              ></iframe>}
+              {videoLink.includes("tiktok") && (
+                <iframe
+                  className="w-full max-w-[400px] aspect-[9/16] mx-auto rounded-xl shadow-2xl h-[500px] md:h-[600px]"
+                  src={`https://www.tiktok.com/embed/v2/${getTikTokVideoId(videoLink)}`}
+                  allow="encrypted-media;"
+                  allowFullScreen
+                />
+              )}
             </motion.div>
           </motion.div>
         )}

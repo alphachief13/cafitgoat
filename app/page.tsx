@@ -39,7 +39,7 @@ function IntroSection() {
         />
 
         <TiltedCard
-          imageSrc="pfp-1.jpg"
+          imageSrc="pfp-3.png"
           altText=""
           captionText="João Lucas, 18"
           containerHeight="300px"
